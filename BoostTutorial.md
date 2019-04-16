@@ -31,9 +31,9 @@ You can run your application using the provided boost goals:
 
 After you start the application, you can access the following microservices:
 
-* The http://localhost:9080/system/properties[http://localhost:9080/system/properties^] microservice simulates the remote `system` service that retrieves the system property information for a specific host. In this case, `localhost` is a specific host name.
+* The http://localhost:9080/system/properties  microservice simulates the remote `system` service that retrieves the system property information for a specific host. In this case, `localhost` is a specific host name.
 
-* The http://localhost:9080/inventory/systems/localhost[http://localhost:9080/inventory/systems/localhost^] microservice is the `inventory` service that invokes the http://localhost:9080/system/properties[http://localhost:9080/system/properties^] microservice to retrieves the system property information.
+* The http://localhost:9080/inventory/systems/localhost microservice is the `inventory` service that invokes the http://localhost:9080/system/properties microservice to retrieves the system property information.
 
-* The \http://localhost:9080/inventory/systems/{your_hostname} microservice is the `inventory` service that invokes the \http://{your_hostname}:9080/system/properties microservice. In Windows, Mac OS, and Linux, get your fully qualified domain name (FQDN) by entering `hostname` from your terminal. Visit the URL by replacing `{your_hostname}` with your FQDN.
+* The http://localhost:9080/inventory/systems/{your_hostname} microservice is the `inventory` service that invokes the \http://{your_hostname}:9080/system/properties microservice. In Windows, Mac OS, and Linux, get your fully qualified domain name (FQDN) by entering `hostname` from your terminal. Visit the URL by replacing `{your_hostname}` with your FQDN.
 You will see the same system property information, but the process of getting the information is different.
